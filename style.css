@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body {
+    background-color: #e3ecff;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.addtask-container {
+    margin-top: 24px;
+    display: flex;
+    width: 100%;
+    gap: 4px;
+}
+
+#write-task {
+    display: inline-block;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    width: 480px;
+    background-color: #ffffff;
+    margin: 80px auto;
+    padding: 40px;
+    border: 1px solid #c2d4fc;
+    border-radius:24px;
+}
+
+#task-list {
+    padding: 0px;
+    width: 100%;
+    margin: 24px 0px;
+}
+
+#task-list .sort-btn {
+    width: 100% !important;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    height:40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: #f5f5f5;
+}
+
+li span {
+    display: inline-block;
+    width: 100%;
+    margin-right: 24px;
+}
+
+.checked {
+    color:#a1a1a1;
+}
+
+.sort-btn {
+    margin-bottom:24px;
+}
+
+#write-task {
+    height: 24px;
+    border-radius: 8px;
+    border: 1px solid #d3d3d3;
+    padding: 0px 8px;
+}
+
+::placeholder {
+    color: #a1a1a1;
+    opacity: 1;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+button {
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    height:24px;
+    padding: 0px 8px;
+    cursor: pointer;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.100);
+}
+
+.edit-btn {
+    background-color: #fff;
+}
+  
+.task-checkbox {
+    border-radius: 4px;
+}
+
+.filter {
+    display:flex;
+    gap: 4px;
+}
+
+input[type="checkbox"]:checked {
+appearance: none;
+background-color: #606aff;
+}
+
+input.checkmark {
+width: 24px;
+height: 12px;
+background-color: #606aff;
+}

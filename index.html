@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+
+        <h1>Ülesanne</h1>
+        <div class="addtask-container">
+        <input id="write-task" type="text" placeholder="Sisesta ülesanne" />
+        <button id="add-task" type="submit" onclick="addTask()">Lisa</button>
+        </div>
+        <ul id="task-list"></ul>
+
+        <div class="filter">
+          <button id="all" class="active filterbtn">Kõik</button>
+          <button id="completed" class="filterbtn">Täidetud</button>
+          <button id="active" class="filterbtn">Täitmata</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
